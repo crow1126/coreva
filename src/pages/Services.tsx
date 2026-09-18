@@ -35,7 +35,7 @@ export function ServicesPage() {
       <section className="cta-band">
         <div className="wrap">
           <div>
-            <h2 style={{ fontSize: '2rem' }}>Need a scoped proposal?</h2>
+            <h2 className="cta-title">Need a scoped proposal?</h2>
             <p style={{ marginTop: 8, color: 'rgba(255,255,255,0.8)' }}>
               Share the problem. We will come back with approach, timeline, and investment.
             </p>

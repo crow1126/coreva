@@ -17,7 +17,7 @@ export function AboutPage() {
       <section className="section">
         <div className="wrap split">
           <div>
-            <h2 className="serif" style={{ fontSize: '2rem', color: 'var(--navy)' }}>
+            <h2 className="serif split-title">
               Professional products, owned end to end.
             </h2>
             <p style={{ marginTop: 16, color: 'var(--muted)' }}>

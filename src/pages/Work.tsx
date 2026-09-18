@@ -15,14 +15,14 @@ export function WorkPage() {
       </section>
 
       <section className="section">
-        <div className="wrap" style={{ display: 'grid', gap: 36 }}>
+        <div className="wrap work-list">
           {projects.map((project) => (
-            <article className="card split" key={project.slug} style={{ padding: 0, overflow: 'hidden' }}>
-              <img src={project.image} alt="" style={{ height: '100%', minHeight: 280, objectFit: 'cover' }} />
-              <div style={{ padding: 32, paddingBottom: 36 }}>
+            <article className="card split work-card" key={project.slug}>
+              <img src={project.image} alt={project.name} className="work-img" />
+              <div className="work-body">
                 <div className="meta">{project.category}</div>
-                <h2 style={{ margin: '8px 0 12px', color: 'var(--navy)' }}>{project.name}</h2>
-                <p style={{ color: 'var(--muted)' }}>{project.summary}</p>
+                <h2 className="work-title">{project.name}</h2>
+                <p>{project.summary}</p>
                 <div className="chips">
                   {project.highlights.map((item) => (
                     <span className="chip" key={item}>
@@ -30,15 +30,16 @@ export function WorkPage() {
                     </span>
                   ))}
                 </div>
-                <a
-                  className="btn btn-navy"
-                  href={project.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ marginTop: 22 }}
-                >
-                  Open {project.url.replace('https://', '')}
-                </a>
+                <div className="work-action">
+                  <a
+                    className="btn btn-navy"
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open {project.url.replace('https://', '')}
+                  </a>
+                </div>
               </div>
             </article>
           ))}

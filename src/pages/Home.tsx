@@ -42,7 +42,7 @@ export function HomePage() {
         <div className="wrap split">
           <div>
             <span className="kicker">What we do</span>
-            <h2 className="serif" style={{ fontSize: '2.2rem', color: 'var(--navy)', letterSpacing: '-0.03em' }}>
+            <h2 className="serif split-title">
               A product studio for websites, apps, and operational software.
             </h2>
             <p style={{ marginTop: 16, color: 'var(--muted)' }}>
@@ -172,7 +172,7 @@ export function HomePage() {
       <section className="cta-band">
         <div className="wrap">
           <div>
-            <h2 style={{ fontSize: '2rem', letterSpacing: '-0.03em' }}>
+            <h2 className="cta-title">
               Ready to brief a website, app, or operations system?
             </h2>
             <p style={{ marginTop: 8, color: 'rgba(255,255,255,0.8)' }}>
