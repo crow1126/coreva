@@ -940,9 +940,22 @@ footer.site ul a:hover {
   }
 
   .grid-2,
-  .grid-3 {
+  .grid-3,
+  .grid-4 {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  /* Ensure the split section (two-col layout with navy card) stacks */
+  .wrap.split {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* Prevent tabs from overflowing the navy card on mobile */
+  .tabs {
+    max-width: 100%;
+    overflow-x: auto;
   }
 
   .hero-actions {
@@ -1027,6 +1040,7 @@ footer.site ul a:hover {
     font-size: 1.85rem;
   }
 
+  /* Stack co-founders to 1 col on very small screens */
   .people {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -1041,5 +1055,16 @@ footer.site ul a:hover {
   .card {
     padding: 18px;
     border-radius: var(--radius-sm);
+  }
+
+  /* Ensure navy card text doesn't overflow */
+  .card.navy h3 {
+    font-size: 1.1rem;
+    word-break: break-word;
+  }
+
+  /* Hero text sizing on small phones */
+  .hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.2rem);
   }
 }
