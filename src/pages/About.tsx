@@ -1,4 +1,4 @@
-import { shareholders } from '../data'
+import { cofounders } from '../data'
 
 export function AboutPage() {
   return (
@@ -78,11 +78,11 @@ export function AboutPage() {
         <div className="wrap">
           <div className="section-head">
             <span className="kicker">Leadership</span>
-            <h2>Shareholders</h2>
-            <p>Coreva Ltd is owned by four shareholders who set the direction of the company.</p>
+            <h2>Co-Founders</h2>
+            <p>Coreva Ltd is led by four co-founders who drive the vision, technology, and growth of the company.</p>
           </div>
           <div className="people">
-            {shareholders.map((person) => (
+            {cofounders.map((person) => (
               <article className="card person" key={person.name}>
                 <div className="avatar">
                   {person.name

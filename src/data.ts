@@ -6,11 +6,11 @@ export const company = {
   email: 'hello@corevaltd.com',
 }
 
-export const shareholders = [
-  { name: 'Samuel Kojo Wobil', role: 'Shareholder' },
-  { name: 'Elliot Oduro Danso', role: 'Shareholder' },
-  { name: 'Ortis Yartey', role: 'Shareholder' },
-  { name: 'Hakeem Youre Rabiu', role: 'Shareholder' },
+export const cofounders = [
+  { name: 'Samuel Kojo Wobil', role: 'Co-Founder & CEO' },
+  { name: 'Elliot Oduro Danso', role: 'Co-Founder & CTO' },
+  { name: 'Ortis Yartey', role: 'Co-Founder & CMO' },
+  { name: 'Hakeem Youre Rabiu', role: 'Co-Founder & CTO' },
 ]
 
 export const services = [
